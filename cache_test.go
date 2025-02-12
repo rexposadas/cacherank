@@ -8,6 +8,14 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
+func TestRemovesLowestRankingItem(t *testing.T) {
+	cache := NewCache(3, &Connection{})
+	cache.items["1"] = Rankable{key: "1", rank: 1}
+	cache.items["2"] = Rankable{key: "2", rank: 2}
+	cache.removesLowestRankingItem()
+	assert.Equal(t, len(cache.items), 1)
+}
+
 func TestGet(t *testing.T) {
 	cache := NewCache(3, &Connection{})
 

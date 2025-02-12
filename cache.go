@@ -31,6 +31,7 @@ func (c *Cache) removesLowestRankingItem() {
 	for _, item := range c.items {
 		if iter == 0 {
 			lowestRankingItem = item
+			iter++
 			continue
 		}
 		if item.rank < lowestRankingItem.rank {
