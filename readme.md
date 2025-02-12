@@ -5,7 +5,6 @@ This is a thread-safe cache implementation with the following characteristics:
 ## Features
 - Fixed-size capacity
 - Thread-safe operations using mutex synchronization
-- Concurrent access support
 
 ## Design Constraints
 1. The cache has a fixed size defined at initialization
