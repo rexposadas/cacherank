@@ -10,7 +10,6 @@ This is a thread-safe cache implementation with the following characteristics:
 ## Design Constraints
 1. The cache has a fixed size defined at initialization
 2. `Connection.getItem` always returns a new `Rankable` object
-3. Thread-safe operations are guaranteed for all cache methods
 
 ## Testing
 
