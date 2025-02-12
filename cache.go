@@ -69,3 +69,10 @@ func (c *Cache) Get(key string) Rankable {
 
 	return item
 }
+
+// Add this new method to safely get the cache size
+func (c *Cache) Size() int {
+	c.mutex.Lock()
+	defer c.mutex.Unlock()
+	return len(c.items)
+}
