@@ -1,0 +1,39 @@
+# Binaries
+*.exe
+*.dll
+*.so
+*.dylib
+*.bin
+*.out
+
+# Go build artifacts
+/bin/
+/pkg/
+/build/
+/dist/
+
+# Dependency directories (if using vendoring)
+vendor/
+
+# Go module cache
+go.sum
+
+# Editor and system files
+*.swp
+*.swo
+.idea/
+.vscode/
+*.log
+.DS_Store
+Thumbs.db
+
+# Test binary files
+*.test
+
+# cgo generated files
+_cgo_*
+*.o
+
+# Coverage files
+*.coverprofile
+*.cov
